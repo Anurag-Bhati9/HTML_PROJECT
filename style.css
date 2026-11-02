@@ -40,10 +40,20 @@ header  a {
 }
 
 section:first-of-type {
+  text-align: center;
+  height: 100vh;
+  padding: 6rem 1.5rem 5rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255,0)),  url(https://hellawater.com/wp-content/uploads/2025/05/3b2c537e0bc947579fc60d342ee2625b.webp);
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat;
+}
+/* 
+section:first-of-type {
     text-align: center;
     padding: 15rem 1.15rem 4rem;
     background: radial-gradient(circle at 50% 0%, #e0f2fe 0%, #ffffff 70%);
-}
+} */
 
 section:first-child p:first-of-type{
     display: inline-block;
@@ -76,7 +86,7 @@ section:first-of-type a:first-of-type{
 section:first-of-type a:last-of-type{
     background-color: transparent;
     color: #0f172a;
-    border: 1px solid #e2e8f0;
+    border: 2px solid #0f172a;
 }
 
 #technology {
@@ -98,6 +108,7 @@ section:first-of-type a:last-of-type{
 .tech-grid > div {
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
+    border-left: 2px solid #013b5e;
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px rgba(0, 0, 0, 0.05);
@@ -149,6 +160,7 @@ section:first-of-type a:last-of-type{
 .product-grid > div {
     background-color: #ffffff;
     border : 1px solid #e2e8f0;
+    border-left: 2px solid #013b5e;
     border-radius: 12px;
     padding: 1.75rem;
     display: flex;
@@ -178,21 +190,25 @@ section:first-of-type a:last-of-type{
 
 
 /* centers the comparison table section */
-#which-model {
+.which-model {
   max-width: 800px;
   margin: 5rem auto;
   padding: 0 1.5rem;
+  /* background-image:  */
+  border: 1px solid black;
+  background-image: url(hero-bg.jpg);
 }
 
 /* centers the section title */
-#which-model h2 {
+.which-model h2 {
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: 2.5rem;
+  
 }
 
 /* styles the main table container box */
-#which-model table {
+.which-model table {
   
   width: 100%;
   margin: 0 auto;
@@ -205,15 +221,15 @@ section:first-of-type a:last-of-type{
 }
 
 /* styles both header labels and table data cells */
-#which-model th,
-#which-model td {
+.which-model th,
+.which-model td {
   padding: 1.15rem 1.5rem;
   text-align: left;
   border-bottom: 1px solid #e2e8f0;
 }
 
 /* styles the header bar */
-#which-model th {
+.which-model th {
   background-color: #f8fafc;
   font-family: 'Outfit', sans-serif;
   font-weight: 600;
@@ -221,7 +237,7 @@ section:first-of-type a:last-of-type{
 }
 
 /* row hover effect: highlights row on hover */
-#which-model tr:hover td {
+.which-model tr:hover td {
   background-color: #f8fafc;
 }
 #faq {
